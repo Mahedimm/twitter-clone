@@ -10,9 +10,13 @@ export default NextAuth({
       }),
     // ...add more providers here
   ],
+  secret:process.env.NRXTAUTH_SECRET,
   callbacks:{
       async session({session,token}){
-        session.user.tag = session.user.name.split(" ").join("").toLowerCase();
+        session.user.tag = session.user.name
+        .split(" ")
+        .join("")
+        .toLowerCase();
         session.user.uid = token.sub;
         return session;
       }
