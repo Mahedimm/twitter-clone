@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "@popperjs/core": "2.9.1",
+    "emoji-mart": "^3.0.1",
+    "firebase": "^9.6.10",
     "heroicons": "^1.0.6",
     "next": "12.1.0",
+    "next-auth": "^4.3.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
